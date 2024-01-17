@@ -10,4 +10,13 @@ public class ArticleDialogueBox extends DialogueBox {
     saveButton = new SaveButton(this);
     titleBox = new TitleBox(this);
   }
+
+  @Override
+  public void changed(UIControl uiControl) {
+    if (uiControl == listBox) {
+      titleBox.setText(listBox.getSelected());
+    } else if (uiControl == saveButton) {
+      listBox.setSelected(titleBox.getText());
+    }
+  }
 }
