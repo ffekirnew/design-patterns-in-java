@@ -1,10 +1,10 @@
 package me.fikernewbirhanu.designpatterns;
 
-import me.fikernewbirhanu.designpatterns.iterator.Main;
+import me.fikernewbirhanu.designpatterns.singleton.Main;
 
 public class App {
   public static void main(String[] args) {
-    System.out.println("Hello World!");
+    // Singleton Main
     Main.main();
   }
 }
